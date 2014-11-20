@@ -1,5 +1,26 @@
+/*  
+Theme Name: MeatKing
+Version:    1.14.20
+Author:     ThemeWagon
+
+
+TABLE OF CONTENTS
+    01 - General and Typography
+    02 - Header
+    03 - Navigation
+    04 - Services
+    05 - Parallax
+    06 - Food menu
+    07 - Special offers
+    08 - Reservation
+    09 - Chefs
+    10 - Footer
+    11 - Responsive styles
+*/
+
+
 /* ==========================================================================
- General and Typography 
+    01. General and Typography 
 ========================================================================== */
 body {
     font-family:'Kreon',serif;
@@ -52,7 +73,7 @@ section::before,section::after {
 
 
 /* ==========================================================================
- Header 
+    02. Header 
 ========================================================================== */
 #header {
     background-image:url(../img/night.jpg);
@@ -120,7 +141,7 @@ section::before,section::after {
 
 
 /* ==========================================================================
- Navigation 
+    03. Navigation 
 ========================================================================== */
 #menu {
     background:rgba(33,45,57,0.8);
@@ -148,34 +169,10 @@ section::before,section::after {
     color:white;
     text-shadow:none;
 }
-@media (min-width:768px) {
-    .navbar-nav {
-        float:none !important;
-        width:100%;
-        text-align:center;
-        margin-left:9px;
-    }
-    .navbar-nav>li {
-        display:inline-block;
-        float:none;
-    }
-    #logo {
-        position:absolute;
-        display:block !important;
-        width:110px;
-        left:50%;
-        margin-left:-55px;
-        background:black;
-        -webkit-border-radius:0 0 100% 100%;
-        -moz-border-radius:0 0 100% 100%;
-        border-radius:0 0 100% 100%;
-        padding: 12px;
-    }
-}
 
 
 /* ==========================================================================
- Services 
+    04. Services 
 ========================================================================== */
 .light-wrapper {
     background:#fbfbfb;
@@ -224,7 +221,7 @@ section::before,section::after {
 
 
 /* ==========================================================================
- parallax 
+    05. parallax 
 ========================================================================== */
 .parallax {
     background:url(../img/parallax1.jpg) fixed no-repeat center center;
@@ -266,7 +263,7 @@ section::before,section::after {
 
 
 /* ==========================================================================
- food menu 
+    06. Food menu 
 ========================================================================== */
 .menu-items {
     text-align:center;
@@ -297,7 +294,7 @@ section::before,section::after {
 
 
 /* ==========================================================================
- special offers 
+    07. Special offers 
 ========================================================================== */
 .hot-tag {
     position:absolute;
@@ -374,7 +371,7 @@ section::before,section::after {
 
 
 /* ==========================================================================
- reservation 
+    08. Reservation 
 ========================================================================== */
 .form-group {
     margin-bottom:24px;
@@ -385,19 +382,9 @@ section::before,section::after {
 }
 .form-control {
     height:38px;
-    /* padding:6px 1*/
-    * padding:6px 12px;
-    */
     font-size:14px;
-    /* line-height:1.428571*/
-    * line-height:1.428571429;
-    /* color:*/
-    /* color:#fff;*/
     vertical-align:middle;
     background-color:transparent;
-    /* border:2px solid #*/
-    * border:2px solid #fff;
-    */
     -webkit-border-radius:2px;
     -webkit-border-radius:2px;
     -moz-border-radius:2px;
@@ -410,13 +397,14 @@ section::before,section::after {
     -o-transition:none !important;
     transition:none !important;
 }
+
 .form p {
     margin: 10px 0 30px 0;
 }
 
 
 /* ==========================================================================
- chefs 
+    09. Chefs 
 ========================================================================== */
 .chefs img {
     border:5px solid #e7e7e7;
@@ -425,7 +413,7 @@ section::before,section::after {
 
 
 /* ==========================================================================
- footer 
+    10. Footer 
 ========================================================================== */
 .dark-wrapper {
     background:#ed0121;
@@ -464,8 +452,45 @@ section::before,section::after {
 }
 
 /* ==========================================================================
- Responsive styles 
+    11. Responsive styles 
 ========================================================================== */
+
+@media (max-width: 991px){
+    .pricing .pricing-item .pricing-item-details {
+        margin-left: 0;
+    }
+
+    .pricing .pricing-item a img {
+        float: none;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width:768px) {
+    .navbar-nav {
+        float:none !important;
+        width:100%;
+        text-align:center;
+        margin-left:9px;
+    }
+    .navbar-nav>li {
+        display:inline-block;
+        float:none;
+    }
+    #logo {
+        position:absolute;
+        display:block !important;
+        width:110px;
+        left:50%;
+        margin-left:-55px;
+        background:black;
+        -webkit-border-radius:0 0 100% 100%;
+        -moz-border-radius:0 0 100% 100%;
+        border-radius:0 0 100% 100%;
+        padding: 12px;
+    }
+}
+
 @media (max-width:767px) {
     #header .banner h1 {
         font-size:60px;
@@ -476,16 +501,5 @@ section::before,section::after {
     .social-bar {
         text-align: left;
         margin-top: 30px;
-    }
-}
-
-
-@media (max-width: 991px){
-    .pricing .pricing-item .pricing-item-details {
-    margin-left: 0;
-    }
-    .pricing .pricing-item a img {
-        float: none;
-        margin-bottom: 30px;
     }
 }
